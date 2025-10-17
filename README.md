@@ -57,4 +57,7 @@ Logistic Regression is preferred for sentiment analysis due to its:
 
 ---
 
-## 📂 Project Structure
+## 📷 Web Preview
+
+<img width="1887" height="866" alt="image" src="https://github.com/user-attachments/assets/dfb0896c-168e-44f3-bc59-cc11021b1209" />
+
