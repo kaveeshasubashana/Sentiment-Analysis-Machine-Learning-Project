@@ -23,14 +23,14 @@
             <div class="d-flex justify-content-center row">
                 <div class="d-flex flex-column col-md-8">
                     <div>
-                        <label for="">Positive Reviews: {{ data.Positive }}</label>
+                        <label for="">Positive Reviews: {{ data.positive }}</label>
                     </div>
                     <div>
-                        <label for="">Positive Reviews: {{ data.negative }}</label>
+                        <label for="">Negative Reviews: {{ data.negative }}</label>
                     </div>
 
                     <div>
-                        <form  method="post">
+                        <form  method="POST">
                                 <textarea name="text"></textarea>
                                 <input type="submit">
                         </form>
