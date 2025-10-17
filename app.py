@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 
 data = dict()
-reviews = ['good product', 'bad productr', 'i like it']
-positive = 2
-negative = 1
+reviews = []
+positive = 0
+negative = 0
 
 @app.route("/")
 def index():
