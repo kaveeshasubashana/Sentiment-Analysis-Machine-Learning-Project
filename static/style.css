@@ -1,0 +1,114 @@
+/* Global styles */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Split screen */
+.split {
+    height: 100vh; /* full viewport height */
+    width: 50%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: #f1f1f1; /* optional bg color */
+}
+
+.right {
+    right: 0;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+/* Center image in left split */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Comments section */
+.coment-bottom {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.coment-bottom span {
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Labels for sentiments */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .split {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .left, .right {
+        position: relative;
+    }
+
+    .centered {
+        position: relative;
+        transform: none;
+        margin: 20px auto;
+    }
+}
